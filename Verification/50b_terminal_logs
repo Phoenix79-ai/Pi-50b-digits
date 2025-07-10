@@ -1,0 +1,546 @@
+~/y-cruncher v0.8.6.9545-static$ ./y-cruncher
+y-cruncher v0.8.6 Build 9545-gcc
+
+Detecting Environment...
+
+Hardware Features:
+(*) Indicates it is used explicitly by y-cruncher.
+
+CPU Vendor:
+    AMD         = No
+    Intel       = Yes
+
+OS Features:
+  * 64-bit      = Yes
+  * OS AVX      = Yes
+  * OS AVX512   = Yes
+
+Hardware Features:
+    MMX         = Yes
+  * x64         = Yes
+  * ABM         = Yes
+    RDRAND      = Yes
+    RDSEED      = Yes
+  * BMI1        = Yes
+  * BMI2        = Yes
+  * ADX         = Yes
+    PREFETCHW   = Yes
+    PREFETCHWT1 = No
+    RDPID       = Yes
+    SERIALIZE   = No
+    CLDEMOTE    = No
+
+SIMD: 128-bit
+  * SSE         = Yes
+  * SSE2        = Yes
+  * SSE3        = Yes
+  * SSSE3       = Yes
+    SSE4a       = No
+  * SSE4.1      = Yes
+  * SSE4.2      = Yes
+    PCLMULQDQ   = Yes
+    AES         = Yes
+    SHA         = Yes
+    GFNI        = Yes
+    SM3         = No
+
+SIMD: 256-bit
+  * AVX             = Yes
+    FMA4            = No
+    XOP             = No
+  * FMA3            = Yes
+  * AVX2            = Yes
+    VAES            = Yes
+    VPCLMULQDQ      = Yes
+  * AVX-GFNI        = Yes
+    AVX-VNNI        = No
+    AVX-VNNI_INT8   = No
+    AVX-IFMA        = No
+    AVX-NE-CONVERT  = No
+    AVX-VNNI_INT16  = No
+    SHA512          = No
+    SM4             = No
+
+SIMD: 512-bit
+  * AVX512-F                = Yes
+    AVX512-CD               = Yes
+    AVX512-PF               = No
+    AVX512-ER               = No
+  * AVX512-VL               = Yes
+  * AVX512-BW               = Yes
+  * AVX512-DQ               = Yes
+    AVX512-VPOPCNTDQ        = Yes
+    AVX512-4VNNIW           = No
+    AVX512-4FMAPS           = No
+  * AVX512-IFMA             = Yes
+  * AVX512-VBMI             = Yes
+    AVX512-VNNI             = Yes
+  * AVX512-VBMI2            = Yes
+    AVX512-BITALG           = Yes
+    AVX512-VPCLMULQDQ       = Yes
+    AVX512-VAES             = Yes
+  * AVX512-GFNI             = Yes
+    AVX512-BF16             = No
+    AVX512-VP2INTERSECT     = Yes
+    AVX512-FP16             = No
+
+APX + AVX10:
+    APX-F           = No
+    AVX10           = No
+    AVX10/128       = No
+    AVX10/256       = No
+    AVX10/512       = No
+
+AMX:
+    AMX-TILE        = No
+    AMX-INT8        = No
+    AMX-BF16        = No
+    AMX-FP16        = No
+    AMX-COMPLEX     = No
+
+
+Auto-Selecting: 18-CNL ~ Shinoa
+
+/home/pqliar/y-cruncher v0.8.6.9545-static/Binaries/18-CNL ~ Shinoa
+
+
+Launching y-cruncher...
+================================================================
+
+Running from console...
+
+
+Insufficient permissions to set thread priority. Please retry as root.
+
+Further messages for this warning will be suppressed.
+
+Checking processor/OS features...
+
+Required Features:
+    x64, ABM, BMI1, BMI2, ADX,
+    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
+    AVX, FMA3, AVX2,
+    AVX512-(F/CD/VL/BW/DQ/IFMA/VBMI)
+
+
+
+Reading Hardware Topology...
+
+Logical Cores:
+    0-11
+
+Physical Cores:
+    0-5
+
+NUMA Node 0:
+    0-11
+
+Scheduling Group 0:
+    0-11
+
+{
+    DataCache : 12582912
+    LogicalCores : ["0-11"]
+    PhysicalCores : ["0-5"]
+    Children : [
+        {
+            DataCache : 1310720
+            LogicalCores : [0 6]
+            PhysicalCores : [0]
+            Children : [
+                {
+                    DataCache : 49152
+                    LogicalCores : [0 6]
+                    PhysicalCores : [0]
+                }
+            ]
+        }
+        {
+            DataCache : 1310720
+            LogicalCores : [1 7]
+            PhysicalCores : [1]
+            Children : [
+                {
+                    DataCache : 49152
+                    LogicalCores : [1 7]
+                    PhysicalCores : [1]
+                }
+            ]
+        }
+        {
+            DataCache : 1310720
+            LogicalCores : [2 8]
+            PhysicalCores : [2]
+            Children : [
+                {
+                    DataCache : 49152
+                    LogicalCores : [2 8]
+                    PhysicalCores : [2]
+                }
+            ]
+        }
+        {
+            DataCache : 1310720
+            LogicalCores : [3 9]
+            PhysicalCores : [3]
+            Children : [
+                {
+                    DataCache : 49152
+                    LogicalCores : [3 9]
+                    PhysicalCores : [3]
+                }
+            ]
+        }
+        {
+            DataCache : 1310720
+            LogicalCores : [4 10]
+            PhysicalCores : [4]
+            Children : [
+                {
+                    DataCache : 49152
+                    LogicalCores : [4 10]
+                    PhysicalCores : [4]
+                }
+            ]
+        }
+        {
+            DataCache : 1310720
+            LogicalCores : [5 11]
+            PhysicalCores : [5]
+            Children : [
+                {
+                    DataCache : 49152
+                    LogicalCores : [5 11]
+                    PhysicalCores : [5]
+                }
+            ]
+        }
+    ]
+}
+
+
+y-cruncher v0.8.6 Build 9545-icx            ( www.numberworld.org )
+Copyright 2008-2024 Alexander J. Yee      ( a-yee@u.northwestern.edu )
+
+Distribute Freely - Please report any bugs.
+
+Binary:  Linux/18-CNL ~ Shinoa  -  Cannon Lake (x64 AVX512-VBMI)
+
+  0         Benchmark Pi      (standard, memory-intensive)
+  1         Benchmark Pi BBP  (digit extraction, CPU only)
+
+  2         Component Stress Tester
+  3         Run I/O Performance Analysis
+
+  4         Custom Compute a Constant
+                -   Compute other constants (e, Golden Ratio, etc...)
+                -   Choose your own settings (use disk for large computations)
+
+  5         BBP Digit Extractor for Pi (Customizer)
+  6         Digit Viewer
+
+  7/8       Advanced Options / About
+  9         Tuning Profile:  Miyuki
+Enter your choice:
+option: 4
+
+
+
+
+
+Custom Compute a Constant
+
+  1     Constant:   Pi
+  2     Algorithm:  Chudnovsky (1988)
+
+  3     Decimal Digits:         50,000,000
+  4     Hexadecimal Digits:     41,524,102
+
+  5     Digit Output:           Plain Text File (.txt)
+  6     Verify Output:          Enabled
+
+  7     Computation Mode:       Ram Only
+  8     Multi-Threading:        Push Pool  ->  12 / ? / 12  (all cores)
+
+  9     Logical Memory Needed:   257 MiB     POSIX mmap()
+        Logical Disk Needed:     0 bytes  +  87.3 MiB for output
+
+ 20/21  Load/Save Configuration File
+
+  0     Start Computation!
+
+
+option: 3
+
+
+Select the # of decimal digits to compute:
+
+Enter the number of digits: (e.g. "1000000", "25m", "10b")
+
+Suffixes:
+    m = 1,000,000             ( 10^6 )
+    b = 1,000,000,000         ( 10^9 )
+    t = 1,000,000,000,000     ( 10^12 )
+    q = 1,000,000,000,000,000 ( 10^15 )
+    K = 1,024                 ( 2^10 )
+    M = 1,048,576             ( 2^20 )
+    G = 1,073,741,824         ( 2^30 )
+    T = 1,099,511,627,776     ( 2^40 )
+    P = 1,125,899,906,842,624 ( 2^50 )
+
+Digits: 50000000000
+
+
+
+
+Custom Compute a Constant
+
+  1     Constant:   Pi
+  2     Algorithm:  Chudnovsky (1988)
+
+  3     Decimal Digits:         50,000,000,000
+  4     Hexadecimal Digits:     41,524,101,187
+
+  5     Digit Output:           Plain Text File (.txt)
+  6     Verify Output:          Enabled
+
+  7     Computation Mode:       Ram Only
+  8     Multi-Threading:        Push Pool  ->  12 / ? / 12  (all cores)
+
+  9     Logical Memory Needed:   222 GiB     POSIX mmap()
+        Logical Disk Needed:     0 bytes  +  85.2 GiB for output
+
+ 20/21  Load/Save Configuration File
+
+  0     Start Computation!
+        Warning: There is insufficient physical memory.
+
+
+option: 7
+
+
+
+
+Select a Mode:
+
+Option      Mode                    Memory      Disk Memory
+
+ 1      Ram Only                     222 GiB
+ 2      Swap Mode / Far Memory    >  113 MiB    >  237 GiB*
+
+
+    *Disk usage varies with the amount of memory that is being used.
+    More memory usually means more disk usage. The value shown here is for
+    the lowest possible amount of working memory.
+
+    Memory and disk usage estimates are provable upper-bounds for what they
+    are measuring. But they do not include unmeasureable overheads such as
+    run-time libraries, bookkeeping, OS system memory, etc...
+
+    Disk usage estimates is for the amount of logical data. Overheads such as
+    redundant RAID will cause the actual disk requirement to be higher than
+    what is displayed.
+
+
+option: 2
+
+
+
+
+Custom Compute a Constant
+
+  1     Constant:   Pi
+  2     Algorithm:  Chudnovsky (1988)
+
+  3     Decimal Digits:         50,000,000,000
+  4     Hexadecimal Digits:     41,524,101,187
+
+  5     Digit Output:           Plain Text File (.txt)
+  6     Verify Output:          Enabled
+
+  7     Computation Mode:       Swap Mode
+  8     Multi-Threading:        Push Pool  ->  12 / ? / 12  (all cores)
+  9     Checkpointing:          Largest:  125 GiB
+
+ 10     Far Memory Config:      Disk Raid 0:   ** Default Path **
+ 11     Far Memory Tuning:      1.00 MiB/seek, no parallelism
+
+ 12     Logical Memory Needed:  3.05 GiB     POSIX mmap()
+        Logical Disk Needed:     237 GiB  +  85.2 GiB for output
+
+ 20/21  Load/Save Configuration File
+  0     Start Computation!
+
+option: 11
+
+
+
+Far Memory Performance Tuning:
+
+These are performance hints for the storage/far-memory configuration.
+y-cruncher uses these settings to optimize its access patterns.
+
+Don't modify anything here if you don't know what you are doing!
+Misconfiguring these settings can result in severe performance degradation.
+
+Full Documentation:
+    http://www.numberworld.org/y-cruncher/guides/swapmode.html#tuning
+
+  0     Done!
+  1     Restore Defaults        
+
+  4     Bytes/Seek:                1.00 MiB
+  5     Preferred Alignment:       2^14 bytes (16.0 KiB)
+  6     Parallel Access:           None - Don't parallelize any accesses.
+
+
+option: 4
+
+Bytes: 8 MiB
+
+Far Memory Performance Tuning:
+
+These are performance hints for the storage/far-memory configuration.
+y-cruncher uses these settings to optimize its access patterns.
+
+Don't modify anything here if you don't know what you are doing!
+Misconfiguring these settings can result in severe performance degradation.
+
+Full Documentation:
+    http://www.numberworld.org/y-cruncher/guides/swapmode.html#tuning
+
+  0     Done!
+  1     Restore Defaults        
+
+  4     Bytes/Seek:                8.00 MiB
+  5     Preferred Alignment:       2^14 bytes (16.0 KiB)
+  6     Parallel Access:           None - Don't parallelize any accesses.
+
+
+option: 6
+
+Far Memory Performance Tuning:
+
+These are performance hints for the storage/far-memory configuration.
+y-cruncher uses these settings to optimize its access patterns.
+
+Don't modify anything here if you don't know what you are doing!
+Misconfiguring these settings can result in severe performance degradation.
+
+Full Documentation:
+    http://www.numberworld.org/y-cruncher/guides/swapmode.html#tuning
+
+  0     Done!
+  1     Restore Defaults        
+
+  4     Bytes/Seek:                8.00 MiB
+  5     Preferred Alignment:       2^14 bytes (16.0 KiB)
+  6     Parallel Access:           Read/Write - Parallelize reads with writes.
+
+
+option: 
+
+
+
+
+Custom Compute a Constant
+
+  1     Constant:   Pi
+  2     Algorithm:  Chudnovsky (1988)
+
+  3     Decimal Digits:         50,000,000,000
+  4     Hexadecimal Digits:     41,524,101,187
+
+  5     Digit Output:           Plain Text File (.txt)
+  6     Verify Output:          Enabled
+
+  7     Computation Mode:       Swap Mode
+  8     Multi-Threading:        Push Pool  ->  12 / ? / 12  (all cores)
+  9     Checkpointing:          Largest:  125 GiB
+
+ 10     Far Memory Config:      Disk Raid 0:   ** Default Path **
+ 11     Far Memory Tuning:      8.00 MiB/seek, parallelize read/write
+
+ 12     Logical Memory Needed:  3.05 GiB     POSIX mmap()
+        Logical Disk Needed:     237 GiB  +  85.2 GiB for output
+
+ 20/21  Load/Save Configuration File
+  0     Start Computation!
+
+option: 0
+
+
+
+Constant:   Pi
+Algorithm:  Chudnovsky (1988)
+
+Decimal Digits:       50,000,000,000
+Hexadecimal Digits:   41,524,101,187
+
+Computation Mode:     Swap Mode
+Multi-Threading:      Push Pool  ->  12 / ? / 12  (all cores)
+Far Memory Config:    Disk Raid 0:   ** Default Path **
+Far Memory Tuning:    8.00 MiB/seek, parallelize read/write
+
+Start Time: Mon Jul  7 05:14:41 2025
+
+Working Memory...  2.97 GiB  (spread: ?)                                       
+Twiddle Tables...  13.1 MiB  (locked, spread: ?)                               
+I/O Buffers...     64.0 MiB  (locked, spread: ?)                               
+
+Begin Computation:
+
+Series CommonP2B3...  3,525,683,480 terms  (Expansion Factor = 3.059)
+Time:    133483.020 seconds  ( 37.079 hours )                                            
+Large Division...
+Time:    8521.170 seconds  ( 2.367 hours )                                     
+InvSqrt(10005)...
+Time:    5637.483 seconds  ( 93.958 minutes )                                  
+Large Multiply...
+Time:    6720.587 seconds  ( 112.010 minutes )                                 
+Verifying Large Multiply...
+Time:    54.211 seconds  ( 0.904 minutes )                                     
+
+Pi:  154416.916 seconds  ( 42.894 hours )
+
+Writing Hexadecimal Digits:
+Time:    429.004 seconds  ( 7.150 minutes )                                    
+Base Converting:
+Time:    8678.272 seconds  ( 2.411 hours )                                     
+Writing Decimal Digits:
+Time:    709.881 seconds  ( 11.831 minutes )                                   
+
+Verifying Base Conversion:
+Time:    7818.934 seconds  ( 2.172 hours )                                     
+Verifying Binary Output:
+Time:    14.480 seconds  ( 0.241 minutes )                                     
+Verifying Decimal Output:
+Time:    32.434 seconds  ( 0.541 minutes )                                     
+Verifying Hexadecimal Output:
+Time:    27.722 seconds  ( 0.462 minutes )                                     
+
+Start Time: Mon Jul  7 05:14:41 2025
+End Time:   Wed Jul  9 05:03:30 2025
+
+Total Computation Time:     163095.188 seconds  ( 45.304 hours )
+Start-to-End Wall Time:     172128.486 seconds  ( 47.813 hours )
+
+CPU Utilization:           52.28 %  +    0.55 % kernel overhead
+Multi-core Efficiency:      4.36 %  +    0.05 % kernel overhead
+
+Last Decimal Digits:  Pi
+3967497298 9229992389 7944203755 6895008004 9953150775  :  49,999,999,950
+6599559400 3447556105 3766739199 8513398712 7510930042  :  50,000,000,000
+
+Spot Check: Good through 50,000,000,000
+
+Program:              y-cruncher v0.8.6 Build 9545-icx
+Tuning Profile:       Linux/18-CNL ~ Shinoa => Miyuki
+Processor(s):         11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+Topology:             12 threads / 6 cores / 1 socket / 1 NUMA node
+Usable Memory:        8,058,564,608 (7.50 GiB)
+Est. CPU Frequency:   4,485,359,928 Hz
+
+Validation File: Pi - 20250709-050330.txt
+
+
